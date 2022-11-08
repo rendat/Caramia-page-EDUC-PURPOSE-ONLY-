@@ -1,0 +1,90 @@
+
+
+Cakes - 9 html
+	785
+	- Sea Salted Honey Crunch	WHOLE
+
+	815
+	- Coffee Honeycomb		WHOLE
+
+	925
+	- Ube Cake		Mini - 670, Slice - 155
+	- Mango Magnifico		Mini - 670, Slice - 155
+
+	935
+	- NEW Salted Smores	WHOLE
+	- Chocolate Smores		WHOLE
+
+	950
+	- Midnight Dream		Mini - 670, Slice - 155
+
+	975
+	- Creme Brulee		WHOLE
+
+	1,020
+	- Pistaccio Cioccolato	Mini - 735
+
+Gelato - 9 html
+
+	Tub - 735, Pint - 380
+	- Turtle Pie				
+	- Blueberry Cheescake
+	- Mango Cream Pie
+	- Strawberry Supreme
+	- Coffee Mudslide
+	- Mint with Chocolate
+	- Cookies and Cream
+	- Chocolate Therapy
+	- Pistachio
+
+Others
+
+	160
+	- Thermal Bag
+
+	1,000
+	- Gusto Card
+
+	Candles - dropdown
+	- Blue
+	- Pink
+
+	40 - message space?
+	- Dedication Text
+
+Party Package
+
+	A : 5,447		50 scoops, 2 flavors - picture, text
+	B : 8,170		75 scoops, 3 flavors
+	C : 10,893		100 scoops, 4 flavors
+	D : 21,786		200 scoops, 8 flavors
+
+Flavors - forms w/ js
+
+	Chocolate
+	- Ferrero
+	- Turtle Pie
+	- Chocolate Therapy
+
+	Fruity
+	- Blueberry Cheesecake
+	- Mango Cream Pie
+	- Mango Berry Medley
+	- Strawberry Supreme
+
+	Nutty
+	- Pistachio
+	- Cocolate Almond Roca
+	- Rocky Road
+
+	Specials
+	- Ube
+	- Sans Rival
+	- Choco Sans Rival
+	- Dulce de Leche
+	- Cookies & Cream
+	- Mint with Chocolate
+	- Cookie Dough
+	- Coffee Mudslide 
+
+

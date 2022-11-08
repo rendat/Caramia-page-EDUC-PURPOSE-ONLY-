@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Caramia Products </title>
+        <link rel="shortcut icon" type="image/jpg" href="img/logo.jpg"/>
+        <!-- BOOTSTRAP CSS, LINK -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="files/style.css" rel="stylesheet" type="text/css">
+        <script src="files/script.js"></script>
+
+        <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        <!-- RESPONSIVE -->
+        <style>
+            
+            @media  screen and (max-width: 1100px) {
+                .prod-container { width: 95%; }
+                .tab-list { width: 70%; }
+                .card-columns { flex-wrap: wrap; width: 100%; }
+                .drop-tabs { display: none; }
+            }
+
+            @media screen and (max-width: 753.21px) {       
+                .tab-list { width: 100%;}
+            }
+
+            @media screen and (max-width: 652.29px) {
+                .tabs { font-size: 16px; }
+            }
+            
+            @media  screen and (max-width: 431px) {
+                .prod-container { width: 99%; }
+                .prodDisplay { padding: 20px; }
+                .prodHeader { font-size: 30px; }
+                .tabs { padding: 0 0 9 0; font-size: 12px; }
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: violet;">
+  <div class="container">
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand"  href="#">
+      <div class="headers"> <img src="img/white-logo_x50.png" alt="Caramia logo"> </div>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="color: #fff;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Products.html" style="color: #fff;"  >Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About_us.html" style="color: #fff;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Franchise.html" style="color: #fff;">Franchise</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br> 
+
+<br> 
+<br>
+        
+        <div class="prod-container" > <!-- all products container -->
+            <h1 id="ap-header" class="prodHeader displayHeader active"> All Products </h1>
+            <h1 id="ac-header" class="prodHeader"> Refrigerated Cakes </h1>
+            <h1 id="ag-header" class="prodHeader"> Premium Gelato </h1>
+            
+            <div class="categories"> <!-- categories sub container -->
+                <div class="tab-list"> <!-- category tabs -->
+                    <button onclick="openProducts(event, 'all-products', 'ap-header'), displayAll(event, 'all-products', 'ap-header')" class="tabs active align-top" style="border-top-left-radius: 8px;"> All Products </button>
+                    <button onclick="openProducts(event, 'all-cakes', 'ac-header')" class="tabs align-top"> Refrigerated Cake </button>
+                    <button onclick="openProducts(event, 'all-gelato', 'ag-header')" class="tabs align-top" style="border-top-right-radius: 8px;"> Premium Gelato </button>
+                </div>
+            </div>
+            
+            <div id="all-products" class="prodDisplay displayAll active">
+                <div id="all-page-1" class="pageDisplay allDisplay active">
+                    
+                    <div class="row"> <!-- ROW 1/4 -->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/packageA.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Package A </p>
+                                        <p class="card-text"> See Details </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/packageB.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Package B </p>
+                                        <p class="card-text"> See Details </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/packageC.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Package C </p>
+                                        <p class="card-text"> See Details </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- ROW 2/5 -->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/packageD.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Package D </p>
+                                        <p class="card-text"> See Details </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/thermal-bag.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> LARGE Thermal Bag </p>
+                                        <p class="card-text"> Php 160 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gusto_card.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> GUSTO Privilege Card </p>
+                                        <p class="card-text"> Php 1,000 </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- ROW 3/5 -->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake9.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Sea Salted Honey Crunch </p>
+                                        <p class="card-text"> Php 785 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake3-2.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Coffee Honeycomb </p>
+                                        <p class="card-text"> Php 815 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake4.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Ube Cake </p>
+                                        <p class="card-text">Php 925 </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- ROW 4/5 -->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake8-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Mango Magnifico </p>
+                                        <p class="card-text">Php 925 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake1-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> NEW Salted S'mores </p>
+                                        <p class="card-text">Php 935 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake5.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Chocolate S'mores </p>
+                                        <p class="card-text">Php 935 </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- ROW 5/5 -->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake6.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Midnight Dream </p>
+                                        <p class="card-text">Php 950 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake2-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Creme Brulee </p>
+                                        <p class="card-text"> Php 975 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake7-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Pistaccio Cioccolato </p>
+                                        <p class="card-text"> Php 1,020 </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="all-page-2" class="pageDisplay">
+                    <div class="row"> <!-- ROW 1/4 -->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato1-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Turtle Pie </p>
+                                        <p class="card-text"> Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato2-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Blueberry Cheesecake </p>
+                                        <p class="card-text"> Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato3-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Mango Cream Pie </p>
+                                        <p class="card-text"> Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- ROW 2/4 -->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato4-3.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Strawberry Supreme </p>
+                                        <p class="card-text"> Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato5-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Coffee Mudslide </p>
+                                        <p class="card-text">Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato6-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Mint with Chocolate </p>
+                                        <p class="card-text">Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- ROW 3/4-->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato7-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Cookies and Cream </p>
+                                        <p class="card-text">Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato8-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Chocolate Therapy </p>
+                                        <p class="card-text">Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato9-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Pistachio </p>
+                                        <p class="card-text"> Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-page d-flex justify-content-center"> <!-- prev/next page -->
+                    <button onclick="navPage(event, 'all-page-1')" class="arrow active" style="padding-bottom: 10px;">&#60;</button>
+                    <div class="pageNum"> 1 </div>
+                    <div class="pageNum"> 2 </div>
+                    <button onclick="navPage(event, 'all-page-2')" class="arrow" style="padding-bottom: 10px;">&#62;</button>
+                </div>
+
+            </div>
+            
+            <div id="all-cakes" class="prodDisplay">
+                <div id="cake-page-1" >
+                    <div class="row"> <!-- ROW 1/4 -->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake9.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Sea Salted Honey Crunch </p>
+                                        <p class="card-text"> Php 785 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake3-2.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Coffee Honeycomb </p>
+                                        <p class="card-text"> Php 815 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake4.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Ube Cake </p>
+                                        <p class="card-text">Php 925 </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- ROW 2/4 -->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake8-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Mango Magnifico </p>
+                                        <p class="card-text">Php 925 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake1-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> NEW Salted S'mores </p>
+                                        <p class="card-text">Php 935 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake5.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Chocolate S'mores </p>
+                                        <p class="card-text">Php 935 </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- ROW 3/4-->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake6.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Midnight Dream </p>
+                                        <p class="card-text">Php 950 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake2-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Creme Brulee </p>
+                                        <p class="card-text"> Php 975 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/cake7-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Pistaccio Cioccolato </p>
+                                        <p class="card-text"> Php 1,020 </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="all-gelato" class="prodDisplay">
+                <div id="gelato-page-1" >
+                    <div class="row"> <!-- ROW 1/4 -->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato1-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Turtle Pie </p>
+                                        <p class="card-text"> Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato2-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Blueberry Cheesecake </p>
+                                        <p class="card-text"> Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato3-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Mango Cream Pie </p>
+                                        <p class="card-text"> Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- ROW 2/4 -->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato4-3.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Strawberry Supreme </p>
+                                        <p class="card-text"> Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato5-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Coffee Mudslide </p>
+                                        <p class="card-text">Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato6-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Mint with Chocolate </p>
+                                        <p class="card-text">Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- ROW 3/4-->
+                        <div class="card-columns col d-flex justify-content-center">
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato7-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Cookies and Cream </p>
+                                        <p class="card-text">Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato8-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Chocolate Therapy </p>
+                                        <p class="card-text">Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" style="width: 280px; padding: 0">
+                                <a href="#">
+                                    <div class="card-img-zoom">
+                                        <img class="card-img-top" src="img/gelato9-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="name"> Pistachio </p>
+                                        <p class="card-text"> Php 735 </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+</html>
